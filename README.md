@@ -1,5 +1,10 @@
 # MEDDICC - FSE Technical Challenge
 
+React frontend is accessible through: https://meddicc-fse-rcev.vercel.app/
+Django backend is accessible through: https://meddicc-fse.onrender.com/
+
+- Admin site: https://meddicc-fse.onrender.com/admin/
+
 ## Django Setup
 
 0. Setup `postgresql` database (`DB_NAME`, `DB_USER`, and `DB_PASSWORD` are needed in `.env`)
@@ -22,4 +27,7 @@
 
 - I structured the Django app to be modular with each feature having its own place in the `apps/` directory.
 - I placed an emphasis on unit testing (`test_models`, `test_filters`, `test_serializers`, `test_views`) with factories as an aid for easily creating test data.
-- Filtering and ordering are supported in the API.
+- Filtering and ordering are supported in the API, but only filtering is available in the frontend app.
+- User authentication was implemented.
+- TypeScript was used, but NextJS was not used.
+- Extended task details, drag-and-drop, and asynchronous functionalities were not implemented.
