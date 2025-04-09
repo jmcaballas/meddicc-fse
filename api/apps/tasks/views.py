@@ -10,5 +10,5 @@ from apps.tasks.serializers import TaskSerializer
 class TaskViewSet(viewsets.ModelViewSet):
     filter_backends = [DjangoFilterBackend, OrderingFilter]
     filterset_class = TaskFilter
-    queryset = Task.objects.all()
+    queryset = Task.objects.all().order_by("id")
     serializer_class = TaskSerializer

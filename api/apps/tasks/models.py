@@ -15,7 +15,9 @@ class Task(TimeStampedModel):
     description = models.TextField(verbose_name=_("description"))
     is_completed = models.BooleanField(default=False, verbose_name=_("is completed"))
     due_date = models.DateTimeField(verbose_name=_("due date"))
-    completed_date = models.DateTimeField(verbose_name=_("completed date"))
+    completed_date = models.DateTimeField(
+        verbose_name=_("completed date"), blank=True, null=True
+    )
 
     class Meta:
         verbose_name = _("task")

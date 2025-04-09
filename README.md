@@ -11,6 +11,13 @@
 6. `poetry run python manage.py runserver`
 7. To test, `poetry run pytest`
 
+## React Setup
+
+1. `cd app/`
+2. Create and define `.env` (use `.env.example` as guide)
+3. `pnpm install`
+4. `pnpm run dev`
+
 ## Notes
 
 - I structured the Django app to be modular with each feature having its own place in the `apps/` directory.
